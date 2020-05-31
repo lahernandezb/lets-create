@@ -1,0 +1,24 @@
+{
+  "name": "lets-create",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "server": "node -r esm app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lahernandezb/lets-create.git"
+  },
+  "author": "Luis Hernandez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lahernandezb/lets-create/issues"
+  },
+  "homepage": "https://github.com/lahernandezb/lets-create#readme",
+  "dependencies": {
+    "esm": "^3.2.25",
+    "express": "^4.17.1"
+  }
+}
