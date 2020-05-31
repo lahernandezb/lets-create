@@ -35,10 +35,10 @@ UserSchema.pre("save", function(next) {
   });
 });
 
-UserSchema.method("checkpassword", function(password) {
+UserSchema.method("checkPassword", function(password) {
   const passwrodHash = this.password;
 
-  return new Prommise((resolve, reject) => {
+  return new Promise((resolve, reject) => {
     bcrypt.compare(password, passwrodHash, (err, same) => {
       err ? reject(err) : resolve(same);
     });

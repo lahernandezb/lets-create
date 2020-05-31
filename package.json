@@ -5,6 +5,7 @@
   "main": "app.js",
   "scripts": {
     "server": "nodemon -r esm app.js",
+    "dev":"npm run server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -26,6 +27,7 @@
     "express-validator": "^6.5.0",
     "jsonwebtoken": "^8.5.1",
     "mongoose": "^5.9.16",
+    "morgan": "^1.10.0",
     "nodemon": "^2.0.4"
   }
 }
