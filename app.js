@@ -47,4 +47,7 @@ app.post(
   signIn
 );
 
+app.use("/api", protect);
+app.use("/api/user", userRouter);
+
 app.listen(PORT, () => console.log(`Listening at http://localhost:${PORT}`));
