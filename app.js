@@ -3,7 +3,10 @@ import { json, urlencoded } from "body-parser";
 import { check } from "express-validator";
 import morgan from "morgan";
 
-import { signUp, signIn } from "./utils/auth";
+import { signUp } from "./utils/auth/signUp";
+import { signIn } from "./utils/auth/signIn";
+import { protect } from "./middleware/protectRoute";
+import userRouter from "./resources/user/user.router";
 import database from "./utils/db";
 
 const app = express();
